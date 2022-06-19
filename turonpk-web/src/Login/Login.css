@@ -1,0 +1,276 @@
+.main-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  background: #ddd;
+  min-height: 100vh;
+}
+
+.main-home-white {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80vw;
+  background: white;
+  min-height: 100vh;
+}
+
+.main-home-header {
+  width: 80vw;
+  
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header-home-left {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+.mega-text {
+  font-size: 3em;
+  color: #2AA8D2;
+  line-height: normal !important;
+  margin:0px !important
+}
+
+.mini-text {
+  font-size: 14px;
+  color: #2AA8D2;
+}
+
+.header-home-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+  min-width: 250px;
+}
+
+.header-home-right p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.textStyleHome:hover {
+  background-color: #2AA8D2;
+  padding: 3px;
+  color: White;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.titleColor {
+  color: #2AA8D2;
+  font-size: 22px;
+}
+
+@keyframes openBar {
+  0% {
+      height: 0px;
+  }
+  50% {
+      height: 200px;
+  }
+  100%{
+      height: 350px;
+  }
+}
+
+@keyframes growDown {
+  0%{
+      transform: scaleY(0);
+  }
+  80% {
+      transform: scaleY(1.1);
+  }
+  100% {
+      transform: scaleY(1);
+  }
+}
+
+.collapsed-menu-div {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 170px;
+  align-items: center;
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;  
+}
+
+.collapsed-menu-div p {
+
+      height: 20px;
+      color:#ddd ;
+      cursor: pointer;
+      
+  
+}
+
+.main-tutors {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.list-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80vw;
+}
+
+.morebtn{
+  color: White;
+  background-color: #2AA8D2;
+  border: none;
+  border-color:  #2AA8D2;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.profile{
+width: 260px;
+height: 350px;
+display: inline-block;
+padding: 5px;
+margin: 20px 40px;
+
+border: 1px;
+border-radius: 10px;
+background-color: #39C2F0;
+}
+.profile-pic{
+margin-top: 20px;
+}
+.profilepic{
+width: 200px;
+margin: 10px;
+height: 200px;
+overflow: hidden;
+border-radius: 300px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 10px;
+}
+.info-Name{
+text-align: center;
+}
+.info-Name a{
+text-decoration: none;
+color: #FFFFFF;
+font-size: 24px;
+}
+.info-Ex a{
+text-decoration: none;
+color: #FFFFFF;
+font-size: 24px;
+display: flex;
+justify-content: center;
+margin: auto 15px;
+}
+
+/* Login Form */
+
+.app1 {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 50vh;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background-color: #f8f9fd;
+    margin-top: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="submit"] {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background: #2AA8D2;
+    border: 1px solid #2AA8D2;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+  }
+  
+  input[type="submit"]:hover {
+    background: #2AA8D2;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-form {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .list-container {
+    display: flex;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px;
+  }
+
+  @media (max-width:800px) {
+    .main-home-white {
+        width: 90vw;
+    }
+  
+    .main-home-header {
+        width: 90vw;
+    }
+  
+    .mega-text {
+        font-size: 18px;
+    }
+    .list-cards {
+        width:90vw
+    }
+  }
